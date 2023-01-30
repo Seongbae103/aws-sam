@@ -15,8 +15,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
       - run: sam build --use-container
-<<<<<<< HEAD
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name aws-sam-cli-managed-default --resolve-s3 --capabilities CAPABILITY_IAM use --resolve-s3
-=======
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name --resolve-s3 --capabilities CAPABILITY_IAM use --resolve-s3
->>>>>>> 3bc7f6e36be5d747989eb6d7619a62df8322a86a
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name aws-sam-cli-managed-default --resolve-s3 --capabilities CAPABILITY_IAM
